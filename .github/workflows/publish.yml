@@ -3,6 +3,7 @@ name: Publish Package
 on:
   release:
     types: [published]
+  workflow_dispatch:  # <-- This enables the button!
 
 jobs:
   publish:
