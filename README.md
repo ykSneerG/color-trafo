@@ -1,6 +1,6 @@
 # color-trafo
 
-![CI](https://github.com/heikopieper/color-trafo/workflows/CI/badge.svg)
+![CI](https://github.com/yksneerG/color-trafo/workflows/CI/badge.svg)
 
 Color transformation utilities for JavaScript with TypeScript support.
 
