@@ -35,12 +35,4 @@ jobs:
       #   env:
       #     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           
-      # Publish to GitHub Packages
-      - name: Publish to GitHub Packages
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-          registry-url: 'https://npm.pkg.github.com'
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # Build and test completed successfully
