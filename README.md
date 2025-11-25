@@ -17,7 +17,7 @@ npm install color-trafo
 ## Usage
 
 ```javascript
-import { CtXYZ, CtLAB8, CtLAB16, WHITE_POINTS } from 'color-trafo';
+import { CtXYZ, CtLAB8, CtLAB16, CtLCH, CtSNM, WHITE_POINTS } from 'color-trafo';
 
 // Create XYZ color (0-1 range)
 const xyz = new CtXYZ(0.5, 0.3, 0.2);
@@ -26,12 +26,22 @@ const xyz = new CtXYZ(0.5, 0.3, 0.2);
 const lab8 = new CtLAB8(50, 10, -20);
 const lab16 = new CtLAB16(32000, 32768, 25000);
 
+// Create LCH color
+const lch = new CtLCH(50, 30, 120);
+
+// Create spectral color
+const spectrum = new CtSNM(
+  [400, 450, 500, 550, 600, 650, 700],
+  [0.1, 0.3, 0.8, 0.9, 0.7, 0.4, 0.1]
+);
+
 // Convert between color spaces
-const convertedLab = xyz.toCsLAB8();
-const convertedXyz = lab8.toCsXYZ();
+const convertedLab = xyz.toCtLAB8();
+const convertedXyz = lab8.toCtXYZ();
+const xyzFromSpectrum = spectrum.toCtXYZ();
 
 // Use different white points
-const labD65 = xyz.toCsLAB8(WHITE_POINTS.D65);
+const labD65 = xyz.toCtLAB8(WHITE_POINTS.D65);
 ```
 
 ## API
@@ -44,6 +54,12 @@ Standard LAB color space (L: 0-100, a/b: ±127).
 
 ### CtLAB16
 16-bit LAB color space (0-65535 range for all channels).
+
+### CtLCH
+LCH color space (Lightness, Chroma, Hue).
+
+### CtSNM
+Spectral color space for measurement device data.
 
 ## License
 

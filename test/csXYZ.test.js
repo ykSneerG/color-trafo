@@ -1,4 +1,4 @@
-import { CtXYZ, CtLAB8, CtLAB16 } from '../dist/csXYZ.js';
+import { CtXYZ, CtLAB8, CtLAB16 } from '../dist/spaces.js';
 
 // CtXYZ tests
 console.log('Input: [0.5, 0.3, 0.2]');
