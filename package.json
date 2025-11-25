@@ -1,5 +1,5 @@
 {
-  "name": "color-trafo",
+  "name": "@yksneerG/color-trafo",
   "version": "0.1.0",
   "description": "Color transformation utilities",
   "type": "module",
