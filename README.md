@@ -2,7 +2,6 @@
 
 ![CI](https://github.com/yksneerG/color-trafo/workflows/CI/badge.svg)
 [![GitHub Package](https://img.shields.io/github/package-json/v/yksneerG/color-trafo?label=GitHub%20Package)](https://github.com/yksneerG/color-trafo/packages)
-[![Coverage](https://codecov.io/gh/yksneerG/color-trafo/branch/main/graph/badge.svg)](https://codecov.io/gh/yksneerG/color-trafo)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)
 ![Bundle Size](https://img.shields.io/badge/bundle%20size-~2KB-brightgreen)
